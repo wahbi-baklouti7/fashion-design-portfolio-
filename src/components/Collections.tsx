@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FadeIn from './ui/FadeIn';
 import { ASSETS } from '../utils/assets';
+import LazyImage from './ui/LazyImage';
 
 type CollectionKey = 'Graduation-2026' | 'ss2023';
 
@@ -89,10 +90,10 @@ const Collections: React.FC = () => {
              index % 3 === 0 || index === 2 ? "col-span-1 md:col-span-1 row-span-2" : "col-span-1 md:col-span-1 h-64 md:h-full"
           }`}>
             <div className="w-full h-full bg-luxury-charcoal">
-              <img 
+              <LazyImage 
                 src={img.src} 
                 alt={img.alt} 
-                className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-[1500ms] ease-out"
+                className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-[1500ms] ease-out will-change-transform"
               />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <span className="text-xs text-luxury-offwhite tracking-widest uppercase font-light">
@@ -103,14 +104,6 @@ const Collections: React.FC = () => {
           </FadeIn>
         ))}
       </div>
-      
-      {/* <div className="mt-24 text-center">
-        <FadeIn>
-          <a href="#contact" className="inline-block border-b border-luxury-muted pb-1 text-xs tracking-[0.2em] uppercase hover:text-luxury-offwhite hover:border-luxury-offwhite transition-all duration-300">
-            Request Full Lookbook
-          </a>
-        </FadeIn>
-      </div> */}
     </div>
   );
 };

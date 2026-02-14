@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './ui/FadeIn';
 import { ASSETS } from '../utils/assets';
+import LazyImage from './ui/LazyImage';
 
 const Process: React.FC = () => {
   return (
@@ -36,10 +37,10 @@ const Process: React.FC = () => {
             <FadeIn delay={200}>
               <div className="grid grid-cols-2 gap-4 items-start">
                  <div className="bg-luxury-charcoal overflow-hidden relative group">
-                    <img src={ASSETS.process[0].src} alt={ASSETS.process[0].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
+                    <LazyImage src={ASSETS.process[0].src} alt={ASSETS.process[0].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
                  </div>
                  <div className="bg-luxury-charcoal overflow-hidden relative group mt-12">
-                    <img src={ASSETS.process[1].src} alt={ASSETS.process[1].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
+                    <LazyImage src={ASSETS.process[1].src} alt={ASSETS.process[1].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
                  </div>
               </div>
             </FadeIn>
@@ -52,14 +53,14 @@ const Process: React.FC = () => {
             <FadeIn delay={200}>
               <div className="grid grid-cols-2 gap-4 items-start">
                  <div className="bg-luxury-charcoal overflow-hidden relative group">
-                    <img src={ASSETS.process[2].src} alt={ASSETS.process[2].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
+                    <LazyImage src={ASSETS.process[2].src} alt={ASSETS.process[2].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
                     <div className="absolute bottom-4 left-4 text-[10px] bg-black/50 backdrop-blur px-2 py-1 text-white uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
                       Raw Silk
                     </div>
                  </div>
                  <div className="bg-luxury-charcoal overflow-hidden relative group mt-12">
                     {/* Using a collection detail shot to complement the material story */}
-                    <img src={  ASSETS.process[3].src} alt={ASSETS.process[3].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
+                    <LazyImage src={ASSETS.process[3].src} alt={ASSETS.process[3].alt} className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700"/>
                     <div className="absolute bottom-4 right-4 text-[10px] bg-black/50 backdrop-blur px-2 py-1 text-white uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
                       Linen Texture
                     </div>
