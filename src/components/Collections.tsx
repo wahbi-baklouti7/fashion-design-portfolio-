@@ -46,7 +46,7 @@ const Collections: React.FC = () => {
   const activeCollection = collectionsData[activeTab];
 
   return (
-    <div className="w-full bg-luxury-black py-32 md:py-48 px-6 md:px-12 lg:px-24 min-h-screen">
+    <div className="w-full bg-luxury-black mt-32  pry-32 md:py-0 px-6 md:px-12 lg:px-24 min-h-screen">
       <FadeIn>
         <header className="mb-24 flex flex-col md:flex-row justify-between items-end border-b border-luxury-divider pb-8">
           <div>

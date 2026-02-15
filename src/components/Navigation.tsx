@@ -13,7 +13,9 @@ const Navigation: React.FC = () => {
 
   const navLinks = [
     { name: 'Collections', href: '#collections' },
+    { name: 'Work', href: '#work' },
     { name: 'Process', href: '#process' },
+    { name: 'Tools', href: '#tools' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -26,7 +28,7 @@ const Navigation: React.FC = () => {
     >
       <div className="container mx-auto px-8 md:px-20 flex justify-between items-center">
         <a href="#hero" className="font-sans text-[10px] md:text-xs tracking-[0.25em] uppercase hover:opacity-70 transition-opacity text-luxury-offwhite">
-          Portfolio 2026
+          Hasna Rachmalia
         </a>
         
         <ul className="hidden md:flex space-x-12">

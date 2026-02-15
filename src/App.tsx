@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import Collections from './components/Collections';
+import WorkExperience from './components/WorkExperience';
 import Process from './components/Process';
 import About from './components/About';
+import ToolsPlatforms from './components/ToolsPlatforms';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
 
@@ -17,16 +19,24 @@ const App: React.FC = () => {
         <Hero />
       </section>
 
+      <section id="about">
+        <About />
+      </section>
+
       <section id="collections">
         <Collections />
       </section>
 
-      <section id="process">
-        <Process />
+      <section id="work">
+        <WorkExperience />
       </section>
 
-      <section id="about">
-        <About />
+      {/* <section id="process">
+        <Process />
+      </section> */}
+
+      <section id="tools">
+        <ToolsPlatforms />
       </section>
 
       <section id="contact">
@@ -34,7 +44,7 @@ const App: React.FC = () => {
       </section>
 
       <footer className="py-12 border-t border-luxury-divider text-center text-luxury-muted text-xs uppercase tracking-widest">
-        <p>&copy; {new Date().getFullYear()} Hasna Rachmalai. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Hasna Rachmalia. All Rights Reserved.</p>
       </footer>
     </main>
   );

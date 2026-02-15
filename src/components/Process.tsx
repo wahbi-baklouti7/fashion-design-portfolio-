@@ -5,7 +5,7 @@ import LazyImage from './ui/LazyImage';
 
 const Process: React.FC = () => {
   return (
-    <div className="w-full bg-luxury-black py-32 md:py-48 px-6 md:px-12 lg:px-24 border-t border-luxury-divider/30">
+    <div className="w-full bg-luxury-black mt-48 tpy-32 md:pyt-48 px-6 md:px-12 lg:px-24 border-t border-luxury-divider/30">
       <FadeIn>
         <header className="mb-24 max-w-2xl">
           <h2 className="font-serif text-4xl md:text-5xl text-luxury-offwhite mb-6">The Process</h2>
